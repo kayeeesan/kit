@@ -1,82 +1,13 @@
 <script setup>
 import { useRouter } from 'vue-router'
+import Header from "../../components/Guest/header.vue"
+
 const router = useRouter()
 
-const login = () => {
-  // Your login logic here
-  console.log('Login clicked')
-}
 </script>
 
 <template>
-  <v-app>
-    <!-- Enhanced App Bar -->
-    <v-app-bar 
-      color="primary" 
-      elevation="4"
-      height="70"
-      class="px-6"
-      :elevation-on-scroll="true"
-    >
-      <!-- Left side with logo/branding -->
-      <div class="d-flex align-center">
-        <!-- Logo/Icon -->
-        <v-avatar 
-          color="white" 
-          size="40" 
-          class="mr-3 elevation-2"
-        >
-          <v-icon icon="mdi-sparkles" color="primary" size="24" />
-        </v-avatar>
-        
-        <!-- App Title -->
-        <v-app-bar-title>
-          <span class="text-h5 font-weight-bold text-white">
-            Welcome
-          </span>
-        </v-app-bar-title>
-      </div>
-
-      <!-- Center navigation (optional) -->
-      <v-spacer></v-spacer>
-      
-      <!-- Right side actions -->
-      <div class="d-flex align-center ga-4">
-        <!-- Optional notification icon -->
-        <v-btn 
-          icon="mdi-bell-outline" 
-          variant="text" 
-          color="white"
-          size="small"
-          class="mr-2"
-        />
-        
-        <!-- Enhanced Login Button -->
-        <v-btn 
-          color="white"
-          variant="elevated"
-          prepend-icon="mdi-login"
-          @click="login"
-          size="default"
-          class="px-5 font-weight-bold text-primary"
-          rounded="pill"
-          elevation="3"
-          :ripple="{ center: true }"
-        >
-          <template v-slot:prepend>
-          </template>
-          <span class="text-button">Sign In</span>
-        </v-btn>
-      </div>
-    </v-app-bar>
-
-    <!-- Main Content (unchanged) -->
-    <v-main>
-      <v-container class="fill-height d-flex align-center justify-center">
-        <!-- Your content here -->
-      </v-container>
-    </v-main>
-  </v-app>
+  <Header />
 </template>
 
 <style scoped>

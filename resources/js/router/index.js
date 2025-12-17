@@ -10,9 +10,14 @@ const routes = [
     name: 'welcome',
     component: Welcome,
   },
+  //Auth Routes
+  {
+//maybe here? for login
+  },
+  //Protected Routes
   {
     path: '/app',
-    component: App, // AUTH LAYOUT
+    component: App, 
     children: [
       {
         path: '',

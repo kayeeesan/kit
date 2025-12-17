@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import Welcome from './views/guest/Welcome.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
+import '@mdi/font/css/materialdesignicons.css'
 
 const app = createApp(Welcome)  // <-- mount your component here
 
