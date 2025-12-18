@@ -1,6 +1,5 @@
-import axios from "axios";
-import router from "../router";
+import { createPinia } from 'pinia'
 
-export default {
-    namespaced: true,
-};
+const pinia = createPinia()
+
+export default pinia
